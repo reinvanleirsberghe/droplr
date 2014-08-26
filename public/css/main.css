@@ -1,0 +1,88 @@
+/*
+  Main Stylesheet
+  ****************************
+  File:     main.scss
+  Author:   Rein Van Leirsberghe
+  E-mail:   reinvanleirsberghe@hotmail.com
+*/
+/*
+  Variables Stylesheet
+  ****************************
+  File:     _variables.scss
+  Author:   Rein Van Leirsberghe
+  E-mail:   reinvanleirsberghe@hotmail.com
+*/
+/* Absolute Center CSS Spinner */
+.map_loader {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: #FEFEFE;
+  z-index: 100;
+  position: absolute;
+  opacity: 0.4; }
+  .map_loader .fa {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    font-size: 40px;
+    margin-top: 190px;
+    opacity: 1; }
+
+/*
+  Navigation Stylesheet
+  ****************************
+  File:     _navigation.scss
+  Author:   Rein Van Leirsberghe
+  E-mail:   reinvanleirsberghe@hotmail.com
+*/
+body {
+  padding-top: 70px; }
+
+/*
+  Tabs Stylesheet
+  ****************************
+  File:     _tabs.scss
+  Author:   Rein Van Leirsberghe
+  E-mail:   reinvanleirsberghe@hotmail.com
+*/
+.tab-content {
+  margin-top: 10px; }
+
+/*
+  Drops edit Stylesheet
+  ****************************
+  File:     _drops-edit.scss
+  Author:   Rein Van Leirsberghe
+  E-mail:   reinvanleirsberghe@hotmail.com
+*/
+#drop_map {
+  display: block;
+  width: 100%;
+  height: 450px; }
+
+#drop_list li {
+  border: 1px solid #eee;
+  display: block;
+  padding: 10px;
+  margin-bottom: 5px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px; }
+  #drop_list li i {
+    margin-top: 4px; }
+#drop_list li:hover {
+  cursor: move;
+  border: 1px solid #ccc; }
+
+/*
+  Forms Stylesheet
+  ****************************
+  File:     _forms.scss
+  Author:   Rein Van Leirsberghe
+  E-mail:   reinvanleirsberghe@hotmail.com
+*/
+.error {
+  display: block;
+  margin-top: 5px;
+  color: #a94442; }

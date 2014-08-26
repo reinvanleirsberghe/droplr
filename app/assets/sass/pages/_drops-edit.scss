@@ -1,0 +1,32 @@
+/*
+  Drops edit Stylesheet
+  ****************************
+  File:     _drops-edit.scss
+  Author:   Rein Van Leirsberghe
+  E-mail:   reinvanleirsberghe@hotmail.com
+*/
+
+#drop_map{
+  display: block;
+  width: 100%;
+  height: 450px;
+}
+
+#drop_list{
+  li{
+    border: 1px solid $color-grey-border-light;
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+
+      i{
+        margin-top: 4px;
+      }
+  }
+
+  li:hover{
+    cursor: move;
+    border: 1px solid $color-grey-border-dark;
+  }
+}

@@ -1,0 +1,14 @@
+/*
+  Forms Stylesheet
+  ****************************
+  File:     _forms.scss
+  Author:   Rein Van Leirsberghe
+  E-mail:   reinvanleirsberghe@hotmail.com
+*/
+
+// error messages
+.error{
+  display: block;
+  margin-top: 5px;
+  color: $color-error;
+}

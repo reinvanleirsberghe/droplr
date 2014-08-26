@@ -1,0 +1,24 @@
+Boilerplate\Users\User:
+  firstname: $string
+  name: $string
+  email: $string$integer@example.com
+  password: $string
+  created_at: $date
+  updated_at: $date
+
+Boilerplate\Drops\Drop:
+  user_id:
+    type: Boilerplate\Users\User
+  name: $string
+  description: $text
+  created_at: $date
+  updated_at: $date
+
+Boilerplate\Markers\Marker:
+  drop_id:
+    type: Boilerplate\Drops\Drop
+  name: $string
+  lat: $integer
+  lng: $integer
+  created_at: $date
+  updated_at: $date
