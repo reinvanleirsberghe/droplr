@@ -1,14 +1,12 @@
 /bootstrap/compiled.php
 /vendor
+/.idea
 composer.phar
 composer.lock
 .env.*.php
 .env.php
 .DS_Store
-.idea
+
 Thumbs.db
 
 tests/_output/*
-.idea/boilerplate.iml
-
-.idea/workspace.xml
