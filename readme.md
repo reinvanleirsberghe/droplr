@@ -1,25 +1,50 @@
-## Laravel PHP Framework
+Droplr
+=====================
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+A starting project where user can make drops
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+## Installation
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+To use this project as is, first clone the repo from GitHub
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+```bash
+git clone https://github.com/reinvanleirsberghe/droplr.git
+```
 
-## Official Documentation
+If you are working with Homestead, update your Homestead.yaml
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+```bash
+'folders:'
+	- map: /Users/username/code/droplr
+      to: /home/vagrant/droplr
+'sites:'
+	- map: droplr.app
+      to: /home/vagrant/droplr
+```
 
-### Contributing To Laravel
+Update your /etc/hosts
+```bash
+sudo vi /etc/hosts
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+127.0.0.1    droplr.app
+```
 
-### License
+cd into homestead and do a `vagrant reload` and `vagrant provison`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+`vm` into the site
+
+Depending on the files that are available
+
+Do a `composer update` (composer.json), a `npm install` (package.json) and a `bower install` (bower.json)
+
+Create a local database and create a  `.env.local.php` file with the data of the database you just made
+
+Create local test database and create a `.env.testing.php` file with the data of the database you just made
+
+`vm` into the site
+
+Do a `php artisan migrate`
+
+Do a `php artisan migrate --env=testing`
+
+Good to go!
