@@ -25,6 +25,7 @@
 				<!-- Password Form Input -->
 				<div class="form-group">
 					{{ Form::label('password', trans('main.password') . ':') }}
+                    {{ link_to('/password/remind', trans('reminders.reset')) }}
 					{{ Form::password('password', ['class' => 'form-control']) }}
 
 					{{ $errors->first('password', '<span class="error">:message</span>') }}

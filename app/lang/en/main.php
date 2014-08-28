@@ -15,6 +15,7 @@ return array(
 	'save'        => 'Save',
 	'delete'	  => 'Delete',
 	'actions'	  => 'Actions',
+    'submit'      => 'Submit',
 
 	'signup'      => 'Sign Up',
 	'login'       => 'Log In',
@@ -24,5 +25,6 @@ return array(
 	'name'        => 'Name',
 	'email'       => 'Email',
 	'password'    => 'Password',
+    'password_confirmation' => 'Password confirmation',
 	'description' => 'Description'
 );
