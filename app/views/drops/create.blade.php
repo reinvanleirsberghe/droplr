@@ -35,14 +35,6 @@
 
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-6">
-				<!-- Description Form Input -->
-				<div class="form-group">
-					{{ Form::label('description', trans('main.description') . ':') }}
-					{{ Form::textarea('description', null, ['class' => 'form-control']) }}
-
-					{{ $errors->first('description', '<span class="error">:message</span>') }}
-				</div>
-
 				<!--  Form Submit -->
 				<div class="form-group pull-right">
 					{{ Form::submit(trans('drops.add'), ['class' => 'btn btn-primary', 'name' => 'submit']) }}

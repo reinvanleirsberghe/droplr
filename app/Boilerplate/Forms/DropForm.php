@@ -10,8 +10,6 @@ class DropForm extends FormValidator {
 	 * @var array
 	 */
 	protected $rules = [
-		'name'        => 'required',
-		'description' => 'required',
-		'markers_amount' => 'integer|min:2'
+		'name'        => 'required'
 	];
 } 

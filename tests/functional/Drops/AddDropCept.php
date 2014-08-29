@@ -12,7 +12,7 @@ $I->amOnpage('/user/drops');
 $I->click('Add Drop');
 
 $I->seeCurrentUrlEquals('/drops/add');
-$I->addADropp('Drop Brugge', 'Dit is een drop in Brugge');
+$I->addADropp('Drop Brugge');
 
 $I->amOnpage('/user/drops');
 

@@ -54,12 +54,11 @@ class Drop extends Eloquent {
 	 * Add drop
 	 *
 	 * @param $name
-	 * @param $description
 	 * @return static
 	 */
-	public static function add($name, $description)
+	public static function add($name)
 	{
-		$drop = new static(compact('name', 'description'));
+		$drop = new static(compact('name'));
 
 		// raise event
 		$drop->raise(new DropAdded($drop));

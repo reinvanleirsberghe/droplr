@@ -34,14 +34,12 @@ class FunctionalHelper extends \Codeception\Module {
 	 * Add a drop
 	 *
 	 * @param $name
-	 * @param $description
 	 */
-	public function addADropp($name, $description)
+	public function addADropp($name)
 	{
 		$I = $this->getModule('Laravel4');
 
 		$I->fillField('name', $name);
-		$I->fillField('description', $description);
 		$I->click('submit');
 	}
 

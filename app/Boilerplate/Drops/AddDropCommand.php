@@ -8,19 +8,11 @@ class AddDropCommand {
 	public $name;
 
 	/**
-	 * @var
-	 */
-	public $description;
-
-
-	/**
 	 * @param $name
-	 * @param $description
 	 */
-	function __construct($name, $description)
+	function __construct($name)
 	{
 		$this->name = $name;
-		$this->description = $description;
 	}
 
 }
