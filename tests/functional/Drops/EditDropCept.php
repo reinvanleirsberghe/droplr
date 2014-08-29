@@ -9,11 +9,10 @@ $I->wantTo("edit a drop's info");
 $I->SignIn();
 
 $I->amOnpage('/drops/add');
-$I->addADropp('Drop 1', 'Dit is een eerste drop');
+$I->addADropp('Drop 1');
 
 $I->seeRecord('drops', [
-	'name'        => 'Drop 1',
-	'description' => 'Dit is een eerste drop'
+	'name'        => 'Drop 1'
 ]);
 
 $I->amOnpage('/user/drops');
@@ -33,8 +32,7 @@ $I->click('submit');
 $I->see('Drop has been successfully edited');
 
 $I->dontSeeRecord('drops', [
-	'name'        => 'Drop 1',
-	'description' => 'Dit is een eerste drop'
+	'name'        => 'Drop 1'
 ]);
 
 $I->seeRecord('drops', [

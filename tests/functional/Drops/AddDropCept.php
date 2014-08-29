@@ -17,7 +17,6 @@ $I->addADropp('Drop Brugge');
 $I->amOnpage('/user/drops');
 
 $I->seeRecord('drops', [
-	'name'        => 'Drop Brugge',
-	'description' => 'Dit is een drop in Brugge'
+	'name'        => 'Drop Brugge'
 ]);
 $I->see('Drop Brugge');

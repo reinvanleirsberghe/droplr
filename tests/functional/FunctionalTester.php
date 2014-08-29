@@ -376,10 +376,9 @@ class FunctionalTester extends \Codeception\Actor
      * Add a drop
 	 *
 	 * @param $name
-	 * @param $description
      * @see \Codeception\Module\FunctionalHelper::addADropp()
      */
-    public function addADropp($name, $description) {
+    public function addADropp($name) {
         return $this->scenario->runStep(new \Codeception\Step\Action('addADropp', func_get_args()));
     }
 
