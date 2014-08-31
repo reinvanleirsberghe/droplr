@@ -66,7 +66,7 @@
 @stop
 
 @section('scripts')
-<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry"></script>
+<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry,places"></script>
 <script type="text/javascript" src="http://hpneo.github.io/gmaps/gmaps.js"></script>
 <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
 @stop

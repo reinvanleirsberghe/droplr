@@ -9,12 +9,12 @@ $(document).ready(function () {
     map = new GMaps({
         div: '#drop_map',
         zoom: 15,
-        lat: 51.1285327,
-        lng: 3.304863100000034
+        lat: Boilerplate.currentDropLat,
+        lng: Boilerplate.currentDropLng
     });
 
     // if there are markers found
-    var markers = Boilerplate.currenDropMarkers;
+    var markers = Boilerplate.currentDropMarkers;
     if (markers) {
         $(markers).each(function () {
             var markerIndex = map.markers.length;

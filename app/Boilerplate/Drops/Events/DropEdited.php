@@ -15,6 +15,6 @@ class DropEdited {
 	 */
 	function __construct(Drop $drop)
 	{
-		$this->$drop = $drop;
+		$this->drop = $drop;
 	}
 }

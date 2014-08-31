@@ -24,6 +24,7 @@ return array(
 	'event_image'            => 'Image',
 	'event_image_content'    => 'Show an image when people reach this point.',
 	'event_video'            => 'Video',
-	'event_video_content'    => 'Show a video when people reach this point.'
+	'event_video_content'    => 'Show a video when people reach this point.',
 
+    'drop_starting_point'    => 'Starting point'
 );

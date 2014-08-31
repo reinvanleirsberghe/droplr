@@ -29,7 +29,7 @@ class AddDropCommandHandler implements CommandHandler {
 	public function handle($command)
 	{
 		$drop = Drop::add(
-			$command->name
+			$command->name, $command->location, $command->lat, $command->lng
 		);
 
 		$this->dropRepository->add($drop);

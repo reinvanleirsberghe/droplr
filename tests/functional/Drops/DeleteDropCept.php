@@ -9,7 +9,16 @@ $I->wantTo('delete a drop');
 $I->SignIn();
 
 $I->amOnpage('/drops/add');
-$I->addADropp('Drop 1', 'Dit is een eerste drop');
+$I->fillField('name', 'Drop 1');
+$I->fillField('geo', 'Brugge');
+$I->fillField('lat', '51.209348');
+$I->fillField('lng', '3.224699');
+$I->fillField('formatted_address', 'Bruges, Belgium');
+$I->click('submit');
+
+$I->seeRecord('drops', [
+    'name'        => 'Drop 1'
+]);
 
 $I->amOnpage('/user/drops');
 

@@ -10,6 +10,10 @@ class DropForm extends FormValidator {
 	 * @var array
 	 */
 	protected $rules = [
-		'name'        => 'required'
+		'name'               => 'required',
+        'geo'                => 'required',
+        'lat'                => 'regex:/^[0-9]+(\\.[0-9]+)?$/',
+        'lng'                => 'regex:/^[0-9]+(\\.[0-9]+)?$/',
+        'formatted_address'  => 'required'
 	];
 } 

@@ -6,7 +6,7 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
-var obfuscate = require('gulp-obfuscate');
+var order = require('gulp-order');
 
 gulp.task('scss', function(){
     gulp.src('app/assets/sass/**/*.scss')

@@ -16,7 +16,7 @@ class Drop extends Eloquent {
 	 * which fields may be massassigned?
 	 * @var array
 	 */
-	protected $fillable = ['name', 'description'];
+	protected $fillable = ['name', 'location', 'lat', 'lng'];
 
 	/**
 	 * The database table used by the model.
@@ -50,15 +50,18 @@ class Drop extends Eloquent {
 		return $this->hasMany('Boilerplate\Markers\Marker');
 	}
 
-	/**
-	 * Add drop
-	 *
-	 * @param $name
-	 * @return static
-	 */
-	public static function add($name)
+    /**
+     * Add drop
+     *
+     * @param $name
+     * @param $location
+     * @param $lat
+     * @param $lng
+     * @return static
+     */
+	public static function add($name, $location, $lat, $lng)
 	{
-		$drop = new static(compact('name'));
+		$drop = new static(compact('name', 'location', 'lat', 'lng'));
 
 		// raise event
 		$drop->raise(new DropAdded($drop));

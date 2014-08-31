@@ -16,7 +16,10 @@ class CreateDropsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
-			$table->text('description');
+            $table->text('description');
+            $table->string('location');
+            $table->decimal('lat', 9, 6);
+            $table->decimal('lng', 9, 6);
 			$table->integer('user_id');
 			$table->softDeletes();
 			$table->timestamps();

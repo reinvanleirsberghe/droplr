@@ -76,7 +76,9 @@ class DropController extends \BaseController {
 
 		JavaScript::put([
 			'currentDropId'     => $drop->id,
-			'currenDropMarkers' => $markers
+            'currentDropLat'     => $drop->lat,
+            'currentDropLng'     => $drop->lng,
+			'currentDropMarkers' => $markers
 		]);
 
 		return View::make('drops.edit', compact('drop'));
